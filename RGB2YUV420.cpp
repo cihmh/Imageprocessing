@@ -69,7 +69,7 @@ int main()
     fseek(fp, 0, SEEK_SET);
 
     unsigned char *buf = (unsigned char *)malloc(len);
-    unsigned char *yuvbuf = (unsigned char *)malloc(image_width * image_width + (image_width * image_width) / 2);
+    unsigned char *yuvbuf = (unsigned char *)malloc(image_width * image_height + (image_width * image_height) / 2);
 
     fread(buf, len, 1, fp);
     fclose(fp);
